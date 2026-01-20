@@ -1,0 +1,198 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Cinzel', serif;
+  height: 100%;
+}
+
+.navbar a {
+    color: white;
+    font-family: "Cinzel", serif;
+    text-decoration: none;
+    margin-left: 20px;
+    transition: color 0.3s;
+  }
+
+.navbar a:hover {
+    color: #d8c391;
+  }
+
+.logo {
+    color: #d8c391;
+    font-family: "Cinzel", serif;
+    text-decoration: none;
+    margin-right: 20px;
+    transition: color 0.3s;
+    font-size: 25px;
+  }
+
+.hero {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: url('./images/landing.jpg') center center/cover no-repeat;
+
+  display: grid;
+  place-items: center;
+
+  color: white;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+
+  animation: float 6s ease-in-out infinite;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
+.hero h1 {
+  font-family: "Cinzel", serif;
+  font-size: 4rem;
+  font-weight: 900;
+  text-shadow: 2px 2px 9px rgba(5, 0, 0, 0.4);
+  line-height: 1.2;
+  letter-spacing: 2px;
+
+  background: linear-gradient(
+    45deg,
+    #d8c391 0px,
+    #d8c391 10px,
+    #bfa66d 10px,
+    #d8c391 20px
+  );
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero p {
+    font-size: 1.8rem;
+    margin-top: 15px;
+    color: white;
+    font-style: italic;
+    text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.6);
+  }
+  .hero .btn {
+    font-size: 1.2rem;
+    padding: 12px 30px;
+    color: #f5e1a4;
+    background: rgba(0, 0, 0, 0.4);
+    border: 2px solid #f5e1a4;
+    border-radius: 5px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+  }
+
+  .hero .btn:hover {
+    background: rgba(245, 225, 164, 0.2);
+    color: #fff;
+    box-shadow: 0 0 15px #f5e1a4;
+  }
+
+  .hero-text {
+    max-width: 500px;
+  }
+
+  .hero-carousel img {
+  max-height: 450px;
+  object-fit: contain;
+}
+
+.carousel-caption {
+    font-style: italic;
+  }
+
+  .cards-section {
+  background: #f3f0e6;
+}
+
+.wuxia-card {
+  background: linear-gradient(to bottom, #fff8e1, #f0e3b8);
+  border: 2px solid #bfa66d;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.wuxia-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 25px rgba(245,225,164,0.5);
+}
+
+.wuxia-card img {
+  border-radius: 10px;
+  max-height: 300px;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+.wuxia-card .card-title {
+  font-family: 'Cinzel', serif;
+  font-weight: 700;
+  color: #8b6e3f;
+}
+
+.wuxia-card .card-text {
+  font-style: italic;
+  color: #5b4a2e;
+}
+
+.site-footer {
+  background: linear-gradient(to top, #1c1a14, #2a261c);
+  color: #e8d9a8;
+  padding: 60px 20px 30px;
+  font-family: 'Cinzel', serif;
+}
+
+.footer-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #d8c391;
+}
+
+.footer-heading {
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: #bfa66d;
+}
+
+.footer-text {
+  font-size: 0.95rem;
+  opacity: 0.9;
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links li {
+  margin-bottom: 8px;
+}
+
+.footer-links a {
+  color: #e8d9a8;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: #fff;
+}
+
+.footer-divider {
+  border-color: rgba(255, 255, 255, 0.1);
+  margin: 30px 0 20px;
+}
+
+.footer-copy {
+  font-size: 0.85rem;
+  opacity: 0.7;
+}
+
